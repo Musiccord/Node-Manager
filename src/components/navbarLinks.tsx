@@ -42,7 +42,7 @@ function NavbarLink({ icon, color, label, route }: NavbarLinkProps) {
 const data = [
   { icon: <HeartRateMonitor size={16} />, color: 'blue', label: 'Overview', route: '/overview' },
   { icon: <Settings size={16} />, color: 'teal', label: 'Config', route: '/config' },
-  { icon: <Server size={16} />, color: 'violet', label: 'Sub-Notes', route: '/sub-notes' },
+  { icon: <Server size={16} />, color: 'violet', label: 'Sub-Nodes', route: '/sub-nodes' },
   { icon: <Users size={16} />, color: 'grape', label: 'Users', route: '/users' },
 ];
 

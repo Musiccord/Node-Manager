@@ -7,7 +7,19 @@ const systemData = {
 }
 
 const config = {
-    
+    unid: "NwtMKNeODUECHPWdjJUWo",
+    NodeName: "Phobos",
+    Region: "EU-Central",
+    SubNodeCount: "200",
+    APIHostname: "localhost",
+    APIPort: "4001",
+    WiHostname: "localhost",
+    WiPort: "4002",
+    DiscordAPIKey: "dev-key"
 }
 
-export { config };
+const getNodeConfig = () => {
+    return config;
+}
+
+export { getNodeConfig, systemData };

@@ -13,6 +13,8 @@ import { useLocalStorage } from '@mantine/hooks';
 import Overview from './pages/overview';
 import DashboardLayout from './layouts/dashboard';
 import Config from './pages/config';
+import SubNodes from './pages/sub-nodes';
+import Users from './pages/users';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -62,6 +64,8 @@ const App = () => {
               <Route index element={<Overview />} />
               <Route path="overview" element={<DashboardLayout> <Overview /> </DashboardLayout>} />
               <Route path="config" element={<DashboardLayout> <Config /> </DashboardLayout>} />
+              <Route path="sub-nodes" element={<DashboardLayout> <SubNodes /> </DashboardLayout>} />
+              <Route path="users" element={<DashboardLayout> <Users /> </DashboardLayout>} />
             </Routes>
           </BrowserRouter>
       </MantineProvider>
